@@ -16,7 +16,7 @@ status: ACTIVE
 
 ## Table of contents
 1. [What is a DIP ?](#WhatisaDIP)
-2. [What makes a succesfull DIP](#DipSuccess)
+2. [What makes a succesfull DIP?](#DipSuccess)
 3. [Dip Rationale](#DipRationale)
 4. [Dip Editors](#DipEditors)
 5. [Dip Types](#DipTypes)
@@ -30,7 +30,7 @@ status: ACTIVE
 ## What is a DIP ? <a name="WhatisaDIP"></a>
 DIP stands for Dero Improvement Proposal. A DIP is a design document providing information to the Dero community, describing a new feature or its processes or environment. The DIP provides a concise technical specification of the feature and a rationale for the feature. The DIP author is responsible for building consensus within the community and documenting dissenting opinions.
 
-## What makes a successful DIP? <a name="DIPSucces"></a>
+## What makes a successful DIP? <a name="DipSuccess"></a>
 Each DIP should have the following parts:
 
   * **Preamble** - RFC 822 style headers containing metadata about the DIP, including the DIP number, a short descriptive title (limited to a maximum of 44 characters), and the author details. See [below for details](#DipPreamble).
@@ -44,10 +44,10 @@ Each DIP should have the following parts:
   * **Implementations** - The implementations must be completed before any DIP is given status “Final”, but it need not be completed before the DIP is merged as draft. While there is merit to the approach of reaching consensus on the specification and rationale before writing code, the principle of “rough consensus and running code” is still useful when it comes to resolving many discussions of API details.
   * **Copyright Waiver** - All DIPs must be in the public domain. See the bottom of this DIP for an example [copyright waiver](#DIPCopyright).
   
-## DIP Rationale <a name="DIPRationale"></a>
+## DIP Rationale <a name="DipRationale"></a>
 We intend DIPs to be the primary instrument for proposing new features, for collecting community technical input on an issue, and for documenting the design decisions that have in result gone into Dero. DIPs are maintained as documents with a revision control. For DERO implementers, DIPs are a convenient way to track the progress of their implementation. Ideally each implementation maintainer would list the DIPs that they have implemented. This will give end users a convenient way to know the current status of a given implementation or library.
 
-## DIP Editors <a name="DIPEditors"></a>
+## DIP Editors <a name="DipEditors"></a>
 The current DIP editors are (discord handles):
 
   * `Dank - Dank#8384` <br/>
@@ -68,24 +68,24 @@ Once the DIP is ready for the repository, the DIP editor will:
 Most of the DIPs are written and maintained by developers with write access to the DERO codebase. The DIP editors monitor DIP changes and correct any structure, grammar, spelling, or markup mistakes they see.
 Editors don’t pass judgment on DIPs, they merely do the administrative & editorial part.
 
-## DIP Types <a name="DIPTypes"></a>
+## DIP Types <a name="DipTypes"></a>
 There are three types of DIP:
   *	A **Standard Track DIP** describes any change that affects most or all DERO implementations, such as a change to the network protocol, a change in block or transaction validity rules, proposed application standards/conventions, or any change or addition that affects the interoperability of applications using DERO. Furthermore Standard DIPs can be broken down into the following categories. Standards Track DIPs consist of three parts, a design document, implementation, and finally if warranted an update to the formal specification.
     * **Core** - improvements requiring a consensus fork as well as changes that are not necessarily consensus critical but may be relevant to core dev discussions such as miner/node strategy changes.
     * **Networking** – core dev to comment
     *	**Interface** - includes improvements around client API/RPC specifications and standards and also certain language-level standards. The label “interface” aligns with the interface repository and discussion should primarily occur in that repository before a DIP is submitted to the DIPs repository.
-    *	**ERC** - application-level standards and conventions, including contract standards such as token standards, name registries, URI schemes, library/package formats and wallet formats.
-  *	A **Meta DIP** describes a process surrounding Ethereum or proposes a change to (or an event in) a process. Process DIPs are like Standards Track DIPs but apply to areas other than the DERO protocol itself. They may propose an implementation, but not to DERO’s codebase; they often require community consensus; unlike Informational DIPs, they are more than recommendations, and users are typically not free to ignore them. Examples include procedures, guidelines, changes to the decision-making process, and changes to the tools or environment used in DERO development. Any meta-DIP is also considered a Process DIP.
+    *	**DRC** - application-level standards and conventions, including contract standards such as token standards, name registries, URI schemes, library/package formats and wallet formats.
+  *	A **Meta DIP** describes a process surrounding DERO or proposes a change to (or an event in) a process. Process DIPs are like Standards Track DIPs but apply to areas other than the DERO protocol itself. They may propose an implementation, but not to DERO’s codebase; they often require community consensus; unlike Informational DIPs, they are more than recommendations, and users are typically not free to ignore them. Examples include procedures, guidelines, changes to the decision-making process, and changes to the tools or environment used in DERO development. Any meta-DIP is also considered a Process DIP.
   *	An **Informational DIP** describes a DERO design issue, or provides general guidelines or information to the DERO community, but does not propose a new feature. Informational DIPs do not necessarily represent DERO community consensus or a recommendation, so users and implementers are free to ignore Informational DIPs or follow their advice.
 
 It is highly recommended that a single DIP contain a single key proposal or new idea. The more focused the DIP, the more successful it tends to be. A change to one client doesn’t require an DIP; a change that affects multiple clients, or defines a standard for multiple apps to use, does.
 
 A DIP must meet certain minimum criteria. It must be a clear and complete description of the proposed enhancement. The enhancement must represent a net improvement. The proposed implementation, if applicable, must be solid and must not complicate the protocol unduly.
 
-## DIP Formats and Templates <a name="DIPFormats"></a>
+## DIP Formats and Templates <a name="DipFormats"></a>
 DIPs should be written in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) style. Image files should be included in a subdirectory of the `assets` folder for that DIP as follows: `assets/dip-X` (for dip X). When linking to an image in the DIP, use relative links such as `../assets/dip-X/image.png`.
 
-## DIP Workflow <a name="DIPWorkflow"></a>
+## DIP Workflow <a name="DipWorkflow"></a>
 Parties involved in the process are you, the champion or DIP author, the DIP editors, and the DERO Core Developpers
 
 **:warning:** Before you begin, vet your idea, this will save you time. Ask the DERO community first if an idea is original to avoid wasting time on something that will be rejected based on prior research (searching the Internet does not always do the trick). It also helps to make sure the idea is applicable to the entire community and not just the author. Just because an idea sounds good to the author does not mean it will work for most people in most areas where DERO is used. Examples of appropriate public forums to gauge interest around your DIP include DERO discord (general channel), the DERO Community Advisory Board members or DERO telegram.
@@ -106,8 +106,8 @@ Each status change is requested by the DIP author and reviewed by the DIP editor
     * :x: A Last Call which results in material changes or substantial unaddressed technical complaints will cause the DIP to revert to Draft.
     * :arrow_right: Accepted (Core DIPs only) – A successful Last Call without material changes or unaddressed technical complaints will become Accepted.
     * :arrow_right: Final (Not core DIPs) – A successful Last Call without material changes or unaddressed technical complaints will become Final.
-  * **Accepted (Core DIPs only)** – This DIP is in the hands of the Ethereum client developers. Their process for deciding whether to encode it into their clients as part of a hard fork is not part of the DIP process.
-    * :arrow_right: Final – Standards Track Core DIPs must be implemented in at least three viable Ethereum clients before it can be considered Final. When the implementation is complete and adopted by the community, the status will be changed to “Final”.
+  * **Accepted (Core DIPs only)** – This DIP is in the hands of the DERO client developers. Their process for deciding whether to encode it into their clients as part of a hard fork is not part of the DIP process.
+    * :arrow_right: Final – Standards Track Core DIPs must be implemented in at least three viable DERO clients before it can be considered Final. When the implementation is complete and adopted by the community, the status will be changed to “Final”.
   * **Final** – This DIP represents the current state-of-the-art. A Final DIP should only be updated to correct errata.
   
 Other exceptional statuses include:
@@ -117,7 +117,7 @@ Other exceptional statuses include:
   * **Active** – This is similar to Final, but denotes an DIP which may be updated without changing its DIP number.
   * **Superseded** – An DIP which was previously final but is no longer considered state-of-the-art. Another DIP will be in Final status and reference the Superseded DIP.
   
-# DIP Header Preamble <a name="DIPPreamble"></a>
+# DIP Header Preamble <a name="DipPreamble"></a>
 Each DIP must begin with an RFC 822 style header preamble, preceded and followed by three hyphens (`---`). The headers must appear in the following order. Headers marked with “*” are optional and are described below. All other headers are required.
 
 `category:` DIP
@@ -196,12 +196,12 @@ DIPs may have a `requires` header, indicating the DIP numbers that this DIP depe
 `superseded-by` and `replaces` headers
 DIPs may also have a `superseded-by` header indicating that an DIP has been rendered obsolete by a later document; the value is the number of the DIP that replaces the current document. The newer DIP must have a replaces header containing the number of the DIP that it rendered obsolete.
 
-# History <a name="DIPHistory"></a>
+# History <a name="DipHistory"></a>
 This document was derived heavily from Etherium's [EIP-1](https://eips.ethereum.org/EIPS/eip-1) which was in turn derived from Bitcoin’s [BIP-0001](https://github.com/bitcoin/bips) written by Amir Taaki which in turn was derived from Python’s [PEP-0001](https://www.python.org/dev/peps/). In many places text was simply copied and modified. These original authors are not responsible for its use in the Dero Improvement Process, and should not be bothered with technical questions specific to Dero or the DIP. Please direct all comments to the DIP editors.
 
   * May 15, 2019: DIP 1 initial drafted
 
 See the revision history for further details, which is also available by clicking on the History button in the top right of the DIP.
 
-# Copyright <a name="DIPCopyright"></a>
+# Copyright <a name="DipCopyright"></a>
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
